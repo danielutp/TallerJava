@@ -1,17 +1,20 @@
 package com.sofka.exercise10;
 
+import java.util.Scanner;
 import java.util.logging.Logger;
 
 public class Exercise10 {
     public static void main(String[] args) {
-        remplace();
+        remplaceSpace();
     }
 
-    public static void remplace() {
+    public static void remplaceSpace() {
         Logger logger = Logger.getLogger(Exercise10.class.getName());
-        String textString = "La sonrisa sera la mejor arma contra la tristeza";
-        String text = textString.replace(" ","");
-        String nueva = "Frase del dia: "+ textString;
+        logger.info("Ingrese la frase que desea modificar: ");
+        Scanner read = new Scanner(System.in);
+        String frase = (read.nextLine());
+        String text = frase.replace(" ","");
+        String nueva = "Frase del dia: "+ text;
         logger.info(nueva);
     }
 }

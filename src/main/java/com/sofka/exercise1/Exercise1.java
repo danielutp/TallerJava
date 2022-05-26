@@ -9,7 +9,6 @@ import java.util.logging.Logger;
  * @since 1.0.0
  */
 public class Exercise1 {
-
     public static void main(String[] args) {
         compare(30,30);
     }

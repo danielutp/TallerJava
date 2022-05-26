@@ -11,6 +11,10 @@ import java.util.logging.Logger;
  */
 public class Exercise2 {
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         int numberone;
         int numbertwo;
