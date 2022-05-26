@@ -3,18 +3,13 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 
 /**
- * Ejercicio 1 para saber cual es el mayor escrito por teclado.
+ * Ejercicio 2 para saber cual es el mayor escrito por teclado.
  *
  * @version 1.0.0 2022-05-24
  * @author Daniel Steven Gil Cruz <danistcruz@gmail.com>
  * @since 1.0.0
  */
 public class Exercise2 {
-
-    /**
-     *
-     * @param args
-     */
     public static void main(String[] args) {
         int numberone;
         int numbertwo;
@@ -26,6 +21,15 @@ public class Exercise2 {
         numbertwo = Integer.parseInt((leer.nextLine()));
         compare(numberone,numbertwo);
     }
+
+    /**
+     * @author Daniel Steven Gil Cruz <danistcruz@gmail.com>
+     * @since 1.0.0
+     *
+     * Metodo para compara cual de los dos numeros ingresados es el mayor
+     * @param numberone Numero uno a comparar
+     * @param numbertwo Numero dos a comparar
+     */
     public static void compare(Integer numberone, Integer numbertwo){
         Logger logger = Logger.getLogger(Exercise2.class.getName());
 

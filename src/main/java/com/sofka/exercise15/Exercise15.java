@@ -3,13 +3,18 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 
 /**
- * Ejercicio Taller Pair programming contiene la clase main  que ejecuta el proyecto
+ * Ejercicio15 para imprimir el menu y sale hasta que escriban el 8.
  *
  * @version 1.0.0 2022-05-25
- * @author Daniel Steven Gil Cruz <danistcruz@gmail.com> - Yeferson Valencia (alejandro.yandd@gmail.com)
+ * @author Daniel Steven Gil Cruz <danistcruz@gmail.com>
  * @since 1.0.0
  */
 public class Exercise15 {
+    /**
+     * @author Daniel Steven Gil Cruz <danistcruz@gmail.com>
+     * @since 1.0.0
+     * Metodo para imprimir el menu y sale hasta que escriban el 8.
+     */
     public static void main(String[] args) {
         Logger log = Logger.getLogger(Exercise15.class.getName());
         Scanner in = new Scanner(System.in);
@@ -24,7 +29,7 @@ public class Exercise15 {
                      5-VER TODOS LOS ACTORES\s
                      6-VER PELICULAS DE LOS ACTORES\s
                      7-VER CATEGORIA DE LAS PELICULAS DE LOS ACTORES\s
-                     8-SALIR                    
+                     8-SALIR\s
                      """);
             option = in.nextInt();
             switch (option) {
