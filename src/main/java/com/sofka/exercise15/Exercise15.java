@@ -9,43 +9,34 @@ import java.util.logging.Logger;
  * @author Daniel Steven Gil Cruz <danistcruz@gmail.com> - Yeferson Valencia (alejandro.yandd@gmail.com)
  * @since 1.0.0
  */
-public class Exercise15{
-    /**
-     *        Contiene el metodo main  instanciamos logger calculator y scaner
-     *        Scanner: poder capturar  lo que ingresa el usuario en los number one y numerberTwo
-     *        logger: mostrar mensaje en consola
-     *        Calculator: instancia el objeto para usar sus metedos
-     *             case 1 -> calculator.addition();
-     *             case 2 -> calculator.subtraction();
-     *             case 3 -> calculator.multiplied();
-     *             case 4 -> calculator.split();
-     *
-     * @author Daniel Steven Gil Cruz (danistcruz@gmail.com) - Yeferson Valencia (alejandro.yandd@gmail.com)
-     * @since 1.0.0
-     */
+public class Exercise15 {
     public static void main(String[] args) {
         Logger log = Logger.getLogger(Exercise15.class.getName());
         Scanner in = new Scanner(System.in);
         int option;
         do {
             log.info("""
-                   ****** GESTION CINEMATOGRÁFICA ********:\s
-                    1-NUEVO ACTOR\s
-                    2-BUSCAR ACTOR\s
-                    3. Multiplicacion\s
-                    4. Division\s
-                    """);
+                    ****** GESTION CINEMATOGRÁFICA ********:\s
+                     1-NUEVO ACTOR\s
+                     2-BUSCAR ACTOR\s
+                     3-ELIMINAR ACTOR\s
+                     4-MODIFICAR ACTOR\s
+                     5-VER TODOS LOS ACTORES\s
+                     6-VER PELICULAS DE LOS ACTORES\s
+                     7-VER CATEGORIA DE LAS PELICULAS DE LOS ACTORES\s
+                     8-SALIR                    
+                     """);
             option = in.nextInt();
             switch (option) {
-                case 1 -> {}
-                case 2 -> {}
-                case 3 -> {}
-                case 4 -> {}
-                case 5 -> {}
-                case 6 -> {}
-                case 7 -> {}
-                case 8 -> {}
-                default -> log.info("OPCION INCORRECTA DIGITE NUEVO \n");
+                case 1 -> log.info("Has ingresado la opcion de NUEVO ACTOR");
+                case 2 -> log.info("Has ingresado la opcion de BUSCAR ACTOR");
+                case 3 -> log.info("Has ingresado la opcion de ELIMINAR ACTOR");
+                case 4 -> log.info("Has ingresado la opcion de MODIFICAR ACTOR");
+                case 5 -> log.info("Has ingresado la opcion de VER TODOS LOS ACTORES");
+                case 6 -> log.info("Has ingresado la opcion de VER PELICULAS DE LOS ACTORES");
+                case 7 -> log.info("Has ingresado la opcion de VER CATEGORIA DE LAS PELICULAS DE LOS ACTORES");
+                case 8 -> log.info("SALIR");
+                default ->log.info("OPCION INCORRECTA DIGITE DE NUEVO");
             }
         } while (option != 8);
         log.info("Saliste satisfactoriamente");
