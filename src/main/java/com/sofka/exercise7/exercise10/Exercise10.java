@@ -1,4 +1,4 @@
-package com.sofka.exercise10;
+package com.sofka.exercise7.exercise10;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
